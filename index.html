@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Курс по таджвиду | Путь красивого чтения Корана</title>
+    <meta
+      name="description"
+      content="Современный сайт-курс по таджвиду: модули, арабский алфавит, видеоурок, правила, практика, тест и экзамен."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Naskh+Arabic:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true"></div>
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="#home" aria-label="На главный экран">
+          <span class="brand__mark">
+            <img
+              src="assets/channels4_profile.jpg"
+              alt="Логотип курса"
+              width="160"
+              height="160"
+            />
+          </span>
+          <span class="brand__text">
+            <strong>Таджвид</strong>
+            <span>Курс красивого чтения</span>
+          </span>
+        </a>
+        <nav class="nav" aria-label="Навигация по разделам">
+          <a href="#modules">Модули</a>
+          <a href="#alphabet">Алфавит</a>
+          <a href="#rules">Правила</a>
+          <a href="#test">Тест</a>
+          <a href="#progress">Прогресс</a>
+        </nav>
+        <div class="topbar__actions">
+          <button class="theme-launcher" id="palette-toggle-button" type="button" aria-expanded="false" aria-controls="theme-switcher-panel">
+            Палитра
+          </button>
+          <div class="topbar__progress" aria-live="polite">
+            <span>Прогресс</span>
+            <strong id="top-progress-value">0%</strong>
+          </div>
+          <div class="topbar__theme-menu card" id="theme-switcher-panel">
+            <span class="theme-switcher__label">Палитра сайта</span>
+            <div class="theme-switcher__buttons">
+              <button class="theme-chip theme-chip--dawn" type="button" data-theme="dawn">
+                Рассвет
+              </button>
+              <button class="theme-chip theme-chip--blue" type="button" data-theme="blue">
+                Голубой
+              </button>
+              <button class="theme-chip theme-chip--turquoise" type="button" data-theme="turquoise">
+                Бирюзовый
+              </button>
+              <button class="theme-chip theme-chip--lime" type="button" data-theme="lime">
+                Ярко-зелёный
+              </button>
+              <button class="theme-chip theme-chip--purple" type="button" data-theme="purple">
+                Пурпурный
+              </button>
+              <button class="theme-chip theme-chip--sunset" type="button" data-theme="sunset">
+                Оранжевый
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+            <h1>Учимся читать Коран по-арабски</h1>
+            <p class="hero__lead">
+              Изучайте основы таджвида шаг за шагом: от арабского
+              алфавита до практики правил, самопроверки и итогового
+              экзамена. Курс помогает учиться спокойно, последовательно
+              и с понятными примерами.
+            </p>
+
+            <div class="hero__actions">
+              <a class="button button--primary" href="#modules">
+                Начать курс
+              </a>
+              <a class="button button--ghost" href="#video">
+                Смотреть урок
+              </a>
+            </div>
+
+            <ul class="hero__highlights">
+              <li>Постепенный путь от букв и огласовок к правилам чтения.</li>
+              <li>Наглядные карточки, практика, тест и итоговая проверка.</li>
+              <li>Прогресс сохраняется, чтобы можно было продолжить позже.</li>
+            </ul>
+          </div>
+
+          <aside class="hero-card card">
+            <span class="hero-card__badge">Основы курса</span>
+            <h2>Ваш путь обучения</h2>
+
+            <div class="hero-card__stats">
+              <div>
+                <strong>28</strong>
+                <span>букв алфавита</span>
+              </div>
+              <div>
+                <strong>5</strong>
+                <span>главных правил</span>
+              </div>
+              <div>
+                <strong>2</strong>
+                <span>этапа проверки</span>
+              </div>
+            </div>
+
+            <div class="hero-card__quote">
+              <p class="arabic-text">وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا</p>
+              <p>
+                Читайте Коран размеренно, внимательно к каждому звуку
+                и правилу произношения.
+              </p>
+            </div>
+
+            <div class="hero-card__visuals">
+              <article class="live-scene live-scene--sunrise">
+                <div class="live-scene__copy">
+                  <span class="live-scene__tag">Светлый старт</span>
+                  <h3>Буквы, звуки и уверенное начало</h3>
+                  <p>
+                    Начните с алфавита, научитесь различать звуки и
+                    постепенно переходите к правилам таджвида.
+                  </p>
+                </div>
+
+                <div class="live-scene__art" aria-hidden="true">
+                  <span class="live-scene__moon"></span>
+                  <span class="live-scene__minaret live-scene__minaret--left"></span>
+                  <span class="live-scene__dome live-scene__dome--left"></span>
+                  <span class="live-scene__dome live-scene__dome--center"></span>
+                  <span class="live-scene__dome live-scene__dome--right"></span>
+                  <span class="live-scene__minaret live-scene__minaret--right"></span>
+                </div>
+              </article>
+
+              <article class="live-scene live-scene--lantern">
+                <div class="live-scene__copy">
+                  <span class="live-scene__tag">Живая практика</span>
+                  <h3>Повторение, самопроверка и экзамен</h3>
+                  <p>
+                    Закрепляйте материал упражнениями, открывайте
+                    следующий этап и следите за прогрессом по курсу.
+                  </p>
+                </div>
+
+                <div class="live-scene__art" aria-hidden="true">
+                  <span class="live-scene__spark live-scene__spark--one"></span>
+                  <span class="live-scene__spark live-scene__spark--two"></span>
+                  <span class="live-scene__spark live-scene__spark--three"></span>
+                  <span class="live-scene__lantern-shape live-scene__lantern-shape--left"></span>
+                  <span class="live-scene__lantern-shape live-scene__lantern-shape--center"></span>
+                  <span class="live-scene__lantern-shape live-scene__lantern-shape--right"></span>
+                </div>
+              </article>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="modules" data-progress-section="modules">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">2. Структура курса</p>
+            <h2>Модули, которые проведут ученика от основы к практике</h2>
+            <p>
+              Курс построен по принципу постепенного усложнения: сначала
+              понимание букв и звуков, затем правила чтения, после этого
+              практика, тест и экзамен.
+            </p>
+          </div>
+
+          <div class="modules-grid">
+            <article class="module-card card is-active" data-lesson="1">
+              <span class="module-card__index">Модуль 1</span>
+              <h3>Введение в таджвид</h3>
+              <p>
+                Что такое таджвид, зачем он нужен и почему правильное
+                произношение сохраняет смысл чтения.
+              </p>
+              <ul class="module-card__meta">
+                <li>Цель: понять роль науки таджвида</li>
+                <li>Результат: осознанное начало обучения</li>
+              </ul>
+              <span class="pill pill--success">Открыт</span>
+            </article>
+
+            <article class="module-card card" data-lesson="2">
+              <span class="module-card__index">Модуль 2</span>
+              <h3>Арабский алфавит</h3>
+              <p>
+                Знакомство с буквами, похожими по написанию группами и базовой
+                артикуляцией.
+              </p>
+              <ul class="module-card__meta">
+                <li>Цель: различать буквы и их группы</li>
+                <li>Результат: уверенное узнавание знаков</li>
+              </ul>
+              <span class="pill">Изучается</span>
+            </article>
+
+            <article class="module-card card" data-lesson="3">
+              <span class="module-card__index">Модуль 3</span>
+              <h3>Ключевые правила</h3>
+              <p>
+                Гунна, мадд, калькаля, нун сакина с танвином и мим сакина в
+                понятной схеме.
+              </p>
+              <ul class="module-card__meta">
+                <li>Цель: увидеть систему правил</li>
+                <li>Результат: понимание, что слышать и как читать</li>
+              </ul>
+              <span class="pill">Скоро</span>
+            </article>
+
+            <article class="module-card card" data-lesson="4">
+              <span class="module-card__index">Модуль 4</span>
+              <h3>Практика и самопроверка</h3>
+              <p>
+                Небольшие задания на узнавание правил, чтение примеров и
+                закрепление материала.
+              </p>
+              <ul class="module-card__meta">
+                <li>Цель: применить правила на практике</li>
+                <li>Результат: готовность к тесту</li>
+              </ul>
+              <span class="pill">После теории</span>
+            </article>
+
+            <article class="module-card card is-locked" data-lesson="5">
+              <span class="module-card__index">Модуль 5</span>
+              <h3>Экзамен модуля</h3>
+              <p>
+                Итоговая проверка по базовым темам курса. Откроется после
+                успешного теста.
+              </p>
+              <ul class="module-card__meta">
+                <li>Цель: подтвердить понимание материала</li>
+                <li>Результат: завершённый учебный модуль</li>
+              </ul>
+              <span class="pill pill--locked">Откроется после теста</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="alphabet" data-progress-section="alphabet">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">3. Арабский алфавит</p>
+            <h2>Буквы, с которых начинается правильное чтение</h2>
+            <p>
+              Каждая буква в Коране требует точности в звучании. Ниже приведён
+              алфавит с краткими пометками по группам, чтобы легче видеть
+              сходство и различия.
+            </p>
+          </div>
+
+          <div class="alphabet-grid">
+            <article class="letter-card card"><span class="letter-card__arabic">ا</span><h3>Алиф</h3><p>Опора для долгих звуков</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ب</span><h3>Ба</h3><p>Губная буква</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ت</span><h3>Та</h3><p>Группа с тремя точками</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ث</span><h3>Са</h3><p>Межзубное произношение</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ج</span><h3>Джим</h3><p>Среднее нёбо</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ح</span><h3>Ха</h3><p>Горловой мягкий звук</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">خ</span><h3>Хо</h3><p>Горловой сильный звук</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">د</span><h3>Даль</h3><p>Кончик языка</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ذ</span><h3>Заль</h3><p>Межзубная группа</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ر</span><h3>Ра</h3><p>Тонкая и твёрдая позиции</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ز</span><h3>Зай</h3><p>Свистящий звук</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">س</span><h3>Син</h3><p>Свистящий мягкий звук</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ش</span><h3>Шин</h3><p>Воздушный шипящий звук</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ص</span><h3>Сад</h3><p>Твёрдый свистящий звук</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ض</span><h3>Дад</h3><p>Особая буква арабского языка</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ط</span><h3>То</h3><p>Твёрдая согласная</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ظ</span><h3>Зо</h3><p>Твёрдое межзубное</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ع</span><h3>Айн</h3><p>Глубокий горловой звук</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">غ</span><h3>Гайн</h3><p>Горловой с вибрацией</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ف</span><h3>Фа</h3><p>Губно-зубная буква</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ق</span><h3>Каф</h3><p>Одна из букв калькали</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ك</span><h3>Кяф</h3><p>Мягче, чем ق</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ل</span><h3>Лям</h3><p>Важна в слове "Аллах"</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">م</span><h3>Мим</h3><p>Губная буква и правила мим сакина</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ن</span><h3>Нун</h3><p>Ключевая буква для гунны</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ه</span><h3>Ха</h3><p>Лёгкий горловой звук</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">و</span><h3>Вау</h3><p>Согласная и долгая гласная</p></article>
+            <article class="letter-card card"><span class="letter-card__arabic">ي</span><h3>Йа</h3><p>Согласная и долгая гласная</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="video" data-progress-section="video">
+        <div class="container video-section">
+          <div class="section-heading">
+            <p class="eyebrow">4. Урок с видео</p>
+            <h2>Посмотрите базовый урок и повторите чтение вслух</h2>
+            <p>
+              Видео помогает услышать ритм чтения и закрепить произношение.
+              После просмотра вернитесь к правилам и практике ниже.
+            </p>
+          </div>
+
+          <div class="video-card card">
+            <div class="video-card__frame">
+              <iframe
+                src="https://www.youtube.com/embed?listType=search&list=%D1%82%D0%B0%D0%B4%D0%B6%D0%B2%D0%B8%D0%B4%20%D0%B4%D0%BB%D1%8F%20%D0%BD%D0%B0%D1%87%D0%B8%D0%BD%D0%B0%D1%8E%D1%89%D0%B8%D1%85"
+                title="Урок таджвида для начинающих на YouTube"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card__content">
+              <h3>Как работать с видеоуроком</h3>
+              <ul class="check-list">
+                <li>Сначала прослушайте весь фрагмент без остановки.</li>
+                <li>Затем повторяйте короткие отрезки и следите за долгими звуками.</li>
+                <li>Отмечайте, где слышна гунна, мадд и калькаля.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="rules" data-progress-section="rules">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">5. Инфографика правил</p>
+            <h2>Пять правил, которые важно распознавать на слух и в тексте</h2>
+            <p>
+              Эти правила встречаются часто и формируют основу красивого,
+              размеренного чтения. Держите их как шпаргалку во время практики.
+            </p>
+          </div>
+
+          <div class="rules-grid">
+            <article class="rule-card card">
+              <span class="rule-card__icon">غ</span>
+              <h3>Гунна</h3>
+              <p>
+                Носовой призвук, который обычно тянется на две харакаты. Часто
+                встречается в <span class="arabic-inline">نّ</span> и
+                <span class="arabic-inline">مّ</span>.
+              </p>
+              <strong>Пример: إِنَّ</strong>
+            </article>
+
+            <article class="rule-card card">
+              <span class="rule-card__icon">آ</span>
+              <h3>Мадд</h3>
+              <p>
+                Удлинение звука. Для начинающего важно сначала уверенно слышать
+                мадд в две харакаты.
+              </p>
+              <strong>Пример: قَالَ</strong>
+            </article>
+
+            <article class="rule-card card">
+              <span class="rule-card__icon">ق</span>
+              <h3>Калькаля</h3>
+              <p>
+                Лёгкий отскок звука у букв
+                <span class="arabic-inline">ق ط ب ج د</span> в состоянии
+                сукуна.
+              </p>
+              <strong>Пример: أَحَدْ</strong>
+            </article>
+
+            <article class="rule-card card">
+              <span class="rule-card__icon">ن</span>
+              <h3>Нун сакина и танвин</h3>
+              <p>
+                Меняют способ чтения в зависимости от следующей буквы: может
+                быть ясное чтение, скрытие, переход или ассимиляция.
+              </p>
+              <strong>Пример: مِنْ يَوْمٍ</strong>
+            </article>
+
+            <article class="rule-card card">
+              <span class="rule-card__icon">م</span>
+              <h3>Мим сакина</h3>
+              <p>
+                Встречается перед разными буквами и требует ясности, скрытия
+                или полного слияния в зависимости от контекста.
+              </p>
+              <strong>Пример: لَكُمْ مَّا</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="practice" data-progress-section="practice">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">6. Практические задания</p>
+            <h2>Закрепите материал небольшими упражнениями</h2>
+            <p>
+              Эти задания не оцениваются автоматически, но помогают настроить
+              слух и внимание к буквам и огласовкам.
+            </p>
+          </div>
+
+          <div class="practice-grid">
+            <article class="practice-card card">
+              <h3>Задание 1. Найдите мадд</h3>
+              <p>
+                Прочитайте слова
+                <span class="arabic-inline">قَالَ، نُورٌ، فِيهِ</span> и
+                определите, где звук тянется на две харакаты.
+              </p>
+              <p class="practice-card__hint">
+                Подсказка: ищите буквы долгих гласных после подходящей
+                огласовки.
+              </p>
+            </article>
+
+            <article class="practice-card card">
+              <h3>Задание 2. Услышьте гунну</h3>
+              <p>
+                Произнесите
+                <span class="arabic-inline">إِنَّ، ثُمَّ، عَمَّ</span> и
+                отметьте, где появляется носовой оттенок.
+              </p>
+              <p class="practice-card__hint">
+                Подсказка: прислушайтесь к буквам
+                <span class="arabic-inline">نّ</span> и
+                <span class="arabic-inline">مّ</span>.
+              </p>
+            </article>
+
+            <article class="practice-card card">
+              <h3>Задание 3. Узнайте калькалю</h3>
+              <p>
+                Прочитайте
+                <span class="arabic-inline">أَحَدْ، الْفَلَقْ، يَجْعَلْ</span>
+                и найдите буквы, которые произносятся с лёгким отскоком.
+              </p>
+              <p class="practice-card__hint">
+                Подсказка: вспоминайте набор
+                <span class="arabic-inline">ق ط ب ج د</span>.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="test">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">7. Тест с автопроверкой</p>
+            <h2>Проверьте, насколько уверенно вы освоили базовые правила</h2>
+            <p>
+              На главной странице этот блок показывает, как выглядит этап
+              проверки знаний в курсе. Для примера оставлен один вопрос:
+              правильный ответ откроет переход к следующему уроку.
+            </p>
+          </div>
+
+          <div class="quiz card">
+            <div class="quiz-question" data-question="q1" data-correct="b">
+              <h3>1. Что такое гунна?</h3>
+              <label><input type="radio" name="q1" value="a" /> Краткая пауза в конце аята</label>
+              <label><input type="radio" name="q1" value="b" /> Носовой призвук, обычно на две харакаты</label>
+              <label><input type="radio" name="q1" value="c" /> Удлинение любой гласной на шесть харакатов</label>
+            </div>
+
+            <div class="quiz__actions">
+              <button class="button button--primary" id="check-test-button" type="button">
+                Проверить тест
+              </button>
+              <button class="button button--ghost" id="next-lesson-button" type="button" disabled>
+                Следующий урок
+              </button>
+            </div>
+
+            <p class="status-message" id="test-message" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="exam">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">8. Экзамен модуля</p>
+            <h2>Итоговая проверка по материалу курса</h2>
+            <p>
+              Экзамен активируется после успешного прохождения теста. В этом
+              блоке оставлена одна итоговая проверка по главному правилу курса.
+            </p>
+          </div>
+
+          <div class="exam-layout">
+            <div class="exam-card card">
+              <div class="exam-lock" id="exam-lock-message">
+                Экзамен будет доступен после успешного теста.
+              </div>
+              <fieldset id="exam-fieldset" disabled>
+                <div class="quiz-question" data-question="e1" data-correct="c">
+                  <h3>1. Какое правило связано с буквами ق ط ب ج د при сукуне?</h3>
+                  <label><input type="radio" name="e1" value="a" /> Мадд</label>
+                  <label><input type="radio" name="e1" value="b" /> Ихфа</label>
+                  <label><input type="radio" name="e1" value="c" /> Калькаля</label>
+                </div>
+              </fieldset>
+
+              <div class="quiz__actions">
+                <button class="button button--primary" id="check-exam-button" type="button" disabled>
+                  Завершить экзамен
+                </button>
+              </div>
+
+              <p class="status-message" id="exam-message" aria-live="polite"></p>
+            </div>
+
+            <aside class="exam-info card">
+              <h3>Как считается зачёт</h3>
+              <ul class="check-list">
+                <li>Тест открывает доступ к следующему учебному этапу.</li>
+                <li>В этом блоке нужно правильно ответить на итоговый вопрос.</li>
+                <li>После успешной сдачи общий прогресс курса обновляется автоматически.</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="progress">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">9. Прогресс ученика</p>
+            <h2>Следите за продвижением по курсу</h2>
+            <p>
+              Сайт запоминает пройденные этапы в браузере. Вы можете вернуться к
+              курсу позже и продолжить с того места, где остановились.
+            </p>
+          </div>
+
+          <div class="progress-layout">
+            <div class="progress-card card">
+              <div class="progress-card__header">
+                <div>
+                  <span class="progress-card__label">Общий прогресс</span>
+                  <strong id="progress-value">0%</strong>
+                </div>
+                <span class="progress-card__status" id="progress-status">Начало пути</span>
+              </div>
+              <div class="progress-bar" aria-hidden="true">
+                <span id="progress-bar-fill"></span>
+              </div>
+              <div class="progress-legend" id="progress-legend">
+                Изучайте материалы, проходите тест и открывайте следующий этап.
+              </div>
+            </div>
+
+            <div class="milestones card">
+              <h3>Этапы курса</h3>
+              <ul class="milestone-list">
+                <li id="milestone-modules">Модули курса изучены</li>
+                <li id="milestone-alphabet">Алфавит просмотрен</li>
+                <li id="milestone-video">Видеоурок открыт</li>
+                <li id="milestone-rules">Правила прочитаны</li>
+                <li id="milestone-practice">Практика завершена</li>
+                <li id="milestone-test">Тест пройден</li>
+                <li id="milestone-exam">Экзамен сдан</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="floating-tools" aria-label="Быстрые действия">
+      <button class="floating-tools__button floating-tools__button--up" id="scroll-top-button" type="button">
+        Наверх
+      </button>
+      <a class="floating-tools__button floating-tools__button--video" href="#video">
+        К уроку
+      </a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
